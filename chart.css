@@ -1,0 +1,120 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.histogram-bg-line ul, .histogram-bg-line li, .histogram-content ul, .histogram-content li, .histogram-y ul, .histogram-y li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.histogram-container
+{
+    position: relative;
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.histogram-bg-line
+{
+    border: #999 solid;
+    border-width: 0 1px 1px 1px;
+    border-right-color: #eee;
+    overflow: hidden;
+    width: 99%;
+}
+
+.histogram-bg-line ul
+{
+    overflow: hidden;
+    border: #eee solid;
+    border-width: 1px 0 0 0;
+}
+
+.histogram-bg-line li
+{
+    float: left;
+    width: 20%; /*need to change, depends on the number of cells to show*/
+    overflow: hidden;
+}
+
+.histogram-bg-line li div
+{
+    border-right: 1px #eee solid;
+}
+
+.histogram-content
+{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 99%;
+    height: 100%;
+}
+
+.histogram-content ul
+{
+    height: 100%;
+}
+
+.histogram-content li
+{
+    float: left;
+    height: 100%;
+    width: 20%; /*need to change, depends on the number of bars to show*/
+    text-align: center;
+    position: relative;
+}
+
+.histogram-box
+{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 20px;
+}
+
+.histogram-content li a
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 20px;
+}
+
+.histogram-content li .name
+{
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+}
+
+.histogram-y
+{
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    font: 12px;
+}
+
+.histogram-y li
+{
+    text-align: right;
+    width: 55px;
+    padding-right: 5px;
+    color: #333;
+}
+
+.histogram-bg-line li div, .histogram-y li
+{
+    height: 70px; /*control the height of each cell and make the bg-line stick to the number on y axis*/
+}

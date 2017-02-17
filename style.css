@@ -1,0 +1,44 @@
+a {color: gray;}
+.websitesidebar a:hover {font-style: italic;}
+.websitesidebar a:visited {color: green;}
+.websiteheader
+{
+    border: 2px solid blue;
+    height: 75px;
+    width: 1000px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.websiteheader h1 {text-align: center;}
+.websitesidebar
+{
+    border: 2px solid blue;
+    width: 200px;
+    height: 600px;
+    position: absolute;
+    left: 0px;
+    top: 75px;
+}
+.websitebody
+{
+    border: 2px solid blue;
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    height: 590px;
+    width: 790px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.websitefooter
+{
+    border: 2px solid blue;
+    position: absolute;
+    top: 675px;
+    left: 0px;
+    height: 50px;
+    width: 1000px;
+}
+.websitefooter p {text-align: center;}
+.error {color: red;}
